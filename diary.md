@@ -9,3 +9,4 @@
 9. I asked the agent to implement editing an existing task. I asked the agent to show me the plan first, before writing any code.
 10. I reviewed the agent's plan for editing and then the code in manual mode. I found a bug: Escape closed the input, then blur fired and saved the text instead of cancelling it. I asked the agent to fix it and checked that Escape now keeps the old text
 11. All npm run commands pass without errors. I tested all requirements by hand in the browser: add, edit, delete, mark as done/not done, all three filters, and page reload
+12. I deployed the app to GitHub Pages and tested it in the browser. All features work, and tasks stay after reload. The layout looks good on mobile, tablet and desktop. There are no errors in the console.
