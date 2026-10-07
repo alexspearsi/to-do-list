@@ -1,4 +1,4 @@
 1. Before I started, I checked the context with /context. I turned off MCP servers and third party skills, so Claude only uses tools that I need for this project
 2. I chose Plan mode and the Opus model, bacause Opus is good at designing app architecture. I gave Claude my stack: React, TypeScript, CSS Modules, ESLint, Prettier and localStorage for saving data. I asked Claude to list all libraries and explain why each one is needed
 3. Claude created the architecture and saved it to .claude/plan.md. I edited plan.md myself. Opus added a counter in the plan that shows how many tasks are left. It is not in the requirements, so I removed it
-4. 
+4. I created a /commit skill, because I'll commit many times during the project. The agent checks all changes and splits them into small logical commits
