@@ -10,7 +10,9 @@ export function TaskForm({ onAdd }: Props) {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
     const trimmed = text.trim();
+    
     if (!trimmed) return;
     onAdd(trimmed);
     setText('');
