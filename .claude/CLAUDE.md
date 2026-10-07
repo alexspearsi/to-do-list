@@ -26,11 +26,6 @@ A single-page to-do list app: React + TypeScript, CSS Modules for styling, no ro
 - **Types** (`src/types.ts`): `Task` and `Filter` (`'all' | 'active' | 'completed'`, a union so the filtering `switch` is exhaustive-checked).
 - Each component has a co-located `*.module.css` file; global styles (reset, font stack, CSS custom properties for colors) live in `src/index.css`.
 
-## Project history
-
-`.claude/plan.md` documents the original architecture decisions and library choices made when scaffolding this project — useful background on *why* a given dependency or structural choice was made.
-
-
 ## Rules 
 
 - Scope: only the task requirements. Do not add features that are not asked for.
