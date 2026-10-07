@@ -24,6 +24,10 @@ function App() {
     );
   };
 
+  const editTask = (id: string, text: string) => {
+    setTasks((prev) => prev.map((task) => (task.id === id ? { ...task, text } : task)));
+  };
+
   const filteredTasks = useMemo(() => {
     switch (filter) {
       case 'active':
@@ -40,7 +44,13 @@ function App() {
       <h1 className={styles.title}>To-Do List</h1>
       <TaskForm onAdd={addTask} />
       <TaskFilters current={filter} onChange={setFilter} />
-      <TaskList tasks={filteredTasks} filter={filter} onToggle={toggleTask} onDelete={deleteTask} />
+      <TaskList
+        tasks={filteredTasks}
+        filter={filter}
+        onToggle={toggleTask}
+        onDelete={deleteTask}
+        onEdit={editTask}
+      />
     </div>
   );
 }
