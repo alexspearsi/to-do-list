@@ -4,7 +4,7 @@ export function useLocalStorage<T>(key: string, initialValue: T): [T, Dispatch<S
   const [value, setValue] = useState<T>(() => {
     try {
       const stored = localStorage.getItem(key);
-      
+
       return stored ? (JSON.parse(stored) as T) : initialValue;
     } catch {
       return initialValue;

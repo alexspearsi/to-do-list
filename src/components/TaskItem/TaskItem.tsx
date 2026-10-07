@@ -48,7 +48,7 @@ export function TaskItem({ task, onToggle, onDelete, onEdit }: Props) {
       commitEdit();
     } else if (event.key === 'Escape') {
       event.preventDefault();
-      
+
       cancelEdit();
     }
   };
